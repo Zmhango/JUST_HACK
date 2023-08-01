@@ -1,0 +1,108 @@
+/* Basic styles */
+body {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  margin: 0;
+  padding: 0;
+  background-image: url(Hacker\ Background\ 1.jpg);
+  background-image: fixed;
+  background-repeat: repeat;
+}
+
+/* Sidebar styles */
+.sidebar {
+  background-color: #040b14;
+  color: white;
+  width: 15rem;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding-top: 20px;
+}
+.sidebar-img {
+  border: 6px solid #37b3ed;
+  height: 14.3rem;
+  border-style: groove;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar li {
+  padding: 0.8rem;
+  text-align: left;
+}
+
+.sidebar li:hover {
+  background-color: #37b3ed;
+}
+.sidebar li a:hover {
+  background-color: green;
+}
+
+.sidebar a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Content styles */
+.content {
+  margin-left: 13.813rem; /* To account for the width of the sidebar */
+  padding: 1.2rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #37b3ed;
+}
+
+h1 {
+  color: rgb(107, 171, 11);
+}
+p {
+  color: aliceblue;
+  padding-bottom: 10px;
+  font-size: 18px;
+}
+
+li {
+  color: aliceblue;
+  font-size: 18px;
+}
+h2 {
+  color: #37b3ed;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: static;
+  }
+  .content {
+    margin-left: 0; /* Remove the margin to center the content */
+  }
+}
+
+/* For small screens, stack the items vertically */
+@media screen and (max-width: 600px) {
+  .profile img {
+    margin: 15px auto;
+    display: block;
+    width: 120px;
+    border: 8px solid #2c2f3f;
+    align-content: center;
+  }
+  .section {
+    height: auto; /* Adjust height to fit content */
+  }
+  .img-section,
+  .img-section1,
+  .img-section2,
+  .img-section3 {
+    width: 100%;
+    float: none;
+  }
+}
